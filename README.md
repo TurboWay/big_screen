@@ -22,6 +22,11 @@ python app.py;
 * 4600 万企业数据大屏可视化 http://127.0.0.1:5000/corp    
 
 
+# 示例
+
+![image](https://github.com/TurboWay/imgstore/blob/master/bigscreen/corp.jpg)
+
+
 # 参考
 
 > https://gitee.com/lvyeyou/DaShuJuZhiDaPingZhanShi
