@@ -14,6 +14,7 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple flask
 # 运行
 
 ```
+cd big_screen;
 python app.py;
 ```
 
