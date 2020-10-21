@@ -26,7 +26,7 @@ python app.py;
 
 # 示例
 
-![image](https://github.com/TurboWay/imgstore/blob/master/bigscreen/corp.jpg)
+![image](https://gitee.com/TurboWay/blogimg/raw/master/img/image-20201021220008456.png)
 
 
 # 参考
