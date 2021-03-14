@@ -26,11 +26,11 @@ python app.py;
 
 # 示例
 
-![model](/demo/model.png)
+![image1](https://user-images.githubusercontent.com/51977051/111063705-310c4200-84eb-11eb-9bb6-dfd187c4014b.png)
 
-![corp](/demo/corp.png)
+![image2](https://user-images.githubusercontent.com/51977051/111063695-22be2600-84eb-11eb-96d0-33d873584563.png)
 
-![job](/demo/job.png)
+![image3](https://user-images.githubusercontent.com/51977051/111063699-2b166100-84eb-11eb-8913-840745c8e0a7.png)
 
 # 使用
 
