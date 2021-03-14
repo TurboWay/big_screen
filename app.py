@@ -6,9 +6,7 @@
 # @Describe:
 
 from flask import Flask, render_template
-from data import SourceData
-from data_corp import CorpData
-from data_job import JobData
+from data import *
 
 app = Flask(__name__)
 

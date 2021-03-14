@@ -5,6 +5,8 @@
 # @Site : 
 # @Describe:
 
+import json
+
 class SourceDataDemo:
 
     def __init__(self):
@@ -207,4 +209,52 @@ class SourceData(SourceDataDemo):
         按照 SourceDataDemo 的格式覆盖数据即可
         """
         super().__init__()
+<<<<<<< HEAD
         self.title = '大数据可视化大屏展示模板'
+=======
+        self.title = '大数据可视化展板通用模板'
+
+class CorpData(SourceDataDemo):
+
+    def __init__(self):
+        """
+        按照 SourceDataDemo 的格式覆盖数据即可
+        """
+        super().__init__()
+        with open('corp.json', 'r', encoding='utf-8') as f:
+            data = json.loads(f.read())
+        self.title = data.get('title')
+        self.counter = data.get('counter')
+        self.counter2 = data.get('counter2')
+        self.echart1_data = data.get('echart1_data')
+        self.echart2_data = data.get('echart2_data')
+        self.echarts3_1_data = data.get('echarts3_1_data')
+        self.echarts3_2_data = data.get('echarts3_2_data')
+        self.echarts3_3_data = data.get('echarts3_3_data')
+        self.echart4_data = data.get('echart4_data')
+        self.echart5_data = data.get('echart5_data')
+        self.echart6_data = data.get('echart6_data')
+        self.map_1_data = data.get('map_1_data')
+
+class JobData(SourceDataDemo):
+
+    def __init__(self):
+        """
+        按照 SourceDataDemo 的格式覆盖数据即可
+        """
+        super().__init__()
+        with open('job.json', 'r', encoding='utf-8') as f:
+            data = json.loads(f.read())
+        self.title = data.get('title')
+        self.counter = data.get('counter')
+        self.counter2 = data.get('counter2')
+        self.echart1_data = data.get('echart1_data')
+        self.echart2_data = data.get('echart2_data')
+        self.echarts3_1_data = data.get('echarts3_1_data')
+        self.echarts3_2_data = data.get('echarts3_2_data')
+        self.echarts3_3_data = data.get('echarts3_3_data')
+        self.echart4_data = data.get('echart4_data')
+        self.echart5_data = data.get('echart5_data')
+        self.echart6_data = data.get('echart6_data')
+        self.map_1_data = data.get('map_1_data')
+>>>>>>> 7736a6ff167c558b16d60f1cb645d29ef3df0bfa
