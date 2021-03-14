@@ -26,7 +26,11 @@ python app.py;
 
 # 示例
 
-![image](https://github.com/TurboWay/imgstore/blob/master/bigscreen/corp.jpg)
+![image1](./demo/model.jpg)
+
+![image1](./demo/corp.jpg)
+
+![image1](./demo/job.jpg)
 
 # 使用
 
