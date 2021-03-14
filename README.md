@@ -26,11 +26,11 @@ python app.py;
 
 # 示例
 
-![image1](./demo/model.jpg)
+![model](F:\other\github\big_screen\demo\model.png)
 
-![image1](./demo/corp.jpg)
+![corp](F:\other\github\big_screen\demo\corp.png)
 
-![image1](./demo/job.jpg)
+![job](F:\other\github\big_screen\demo\job.png)
 
 # 使用
 
