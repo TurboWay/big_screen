@@ -8,7 +8,7 @@
 class SourceDataDemo:
 
     def __init__(self):
-        self.title = '大数据可视化展板通用模板'
+        self.title = '大数据可视化大屏展示模板'
         self.counter = {'name': '2018年总收入情况', 'value': 12581189}
         self.counter2 = {'name': '2018年总支出情况', 'value': 3912410}
         self.echart1_data = {
@@ -207,4 +207,4 @@ class SourceData(SourceDataDemo):
         按照 SourceDataDemo 的格式覆盖数据即可
         """
         super().__init__()
-        self.title = '大数据可视化展板通用模板'
+        self.title = '大数据可视化大屏展示模板'
