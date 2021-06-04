@@ -25,15 +25,15 @@ python app.py;
 * (2020-09) 厦门 10 万招聘数据大屏可视化 http://127.0.0.1:5000/job    
 
 # 在线示例
-http://zvipz.vip:4390/
+http://210.22.22.150:4390/
 
 ![image1](https://user-images.githubusercontent.com/51977051/111063705-310c4200-84eb-11eb-9bb6-dfd187c4014b.png)
 
-http://zvipz.vip:4390/corp
+http://210.22.22.150:4390/corp
 
 ![image2](https://user-images.githubusercontent.com/51977051/111063695-22be2600-84eb-11eb-96d0-33d873584563.png)
 
-http://zvipz.vip:4390/job
+http://210.22.22.150:4390/job
 
 ![image3](https://user-images.githubusercontent.com/51977051/111063699-2b166100-84eb-11eb-8913-840745c8e0a7.png)
 
