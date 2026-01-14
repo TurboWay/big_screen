@@ -209,7 +209,7 @@ var trans = {
     this.canvas = document.getElementById("canv");
     this.canvas.width = window.innerWidth;
     this.canvas.height = window.innerHeight;
-    this.$ = canv.getContext("2d");
+    this.$ = this.canvas.getContext("2d");
     this.$.globalCompositeOperation = 'source-over';
     this.varr = [];
     this.dist = [];
@@ -344,10 +344,11 @@ var trans = {
   };
   var app = new Build();
   app.run();
+  window.addEventListener('resize', function() {
+    var canvas = document.getElementById("canv");
+    canvas.width = w = window.innerWidth;
+    canvas.height = h = window.innerHeight;
+  }, false);
 })();
-window.addEventListener('resize', function() {
-  canvas.width = w = window.innerWidth;
-  canvas.height = h = window.innerHeight;
-}, false);
 </script>
 </body></html>
