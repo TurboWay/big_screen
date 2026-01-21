@@ -24,9 +24,18 @@ python app.py;
 
 * (2020-09) 厦门 10 万招聘数据大屏可视化 http://127.0.0.1:5000/job    
 
-# 示例
+# 在线示例
+http://210.22.22.150:4390/
 
-![image](https://github.com/TurboWay/imgstore/blob/master/bigscreen/corp.jpg)
+![image1](https://user-images.githubusercontent.com/51977051/111063705-310c4200-84eb-11eb-9bb6-dfd187c4014b.png)
+
+http://210.22.22.150:4390/corp
+
+![image2](https://user-images.githubusercontent.com/51977051/111063695-22be2600-84eb-11eb-96d0-33d873584563.png)
+
+http://210.22.22.150:4390/job
+
+![image3](https://user-images.githubusercontent.com/51977051/111063699-2b166100-84eb-11eb-8913-840745c8e0a7.png)
 
 # 使用
 
