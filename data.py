@@ -7,6 +7,7 @@
 
 import json
 
+
 class SourceDataDemo:
 
     def __init__(self):
@@ -104,9 +105,47 @@ class SourceDataDemo:
         self.map_1_data = {
             'symbolSize': 100,
             'data': [
-                {'name': '海门', 'value': 239},
-                {'name': '鄂尔多斯', 'value': 231},
-                {'name': '招远', 'value': 203},
+                {'name': '北京', 'value': 320},
+                {'name': '上海', 'value': 320},
+                {'name': '广州', 'value': 520},
+                {'name': '深圳', 'value': 700},
+                {'name': '成都', 'value': 380},
+                {'name': '重庆', 'value': 350},
+                {'name': '杭州', 'value': 420},
+                {'name': '武汉', 'value': 360},
+                {'name': '南京', 'value': 400},
+                {'name': '天津', 'value': 320},
+                {'name': '西安', 'value': 340},
+                {'name': '郑州', 'value': 310},
+                {'name': '长沙', 'value': 290},
+                {'name': '青岛', 'value': 280},
+                {'name': '沈阳', 'value': 270},
+                {'name': '大连', 'value': 260},
+                {'name': '济南', 'value': 250},
+                {'name': '哈尔滨', 'value': 240},
+                {'name': '福州', 'value': 230},
+                {'name': '厦门', 'value': 320},
+                {'name': '昆明', 'value': 210},
+                {'name': '合肥', 'value': 200},
+                {'name': '南昌', 'value': 195},
+                {'name': '石家庄', 'value': 190},
+                {'name': '太原', 'value': 185},
+                {'name': '南宁', 'value': 180},
+                {'name': '长春', 'value': 175},
+                {'name': '温州', 'value': 170},
+                {'name': '宁波', 'value': 165},
+                {'name': '苏州', 'value': 160},
+                {'name': '无锡', 'value': 155},
+                {'name': '贵阳', 'value': 150},
+                {'name': '珠海', 'value': 145},
+                {'name': '兰州', 'value': 140},
+                {'name': '洛阳', 'value': 135},
+                {'name': '海口', 'value': 130},
+                {'name': '乌鲁木齐', 'value': 320},
+                {'name': '扬州', 'value': 120},
+                {'name': '南通', 'value': 115},
+                {'name': '烟台', 'value': 110},
+                {'name': '海门', 'value': 105},
             ]
         }
 
@@ -195,11 +234,33 @@ class SourceDataDemo:
     @property
     def map_1(self):
         data = self.map_1_data
+        sym = data.get('symbolSize')
+        if sym is None or (isinstance(sym, (int, float)) and not (sym > 0)):
+            sym = 100
         echart = {
-            'symbolSize': data.get('symbolSize'),
+            'symbolSize': sym,
             'data': data.get('data'),
         }
         return echart
+
+    def to_dict(self):
+        """
+        将数据对象转换为字典格式，用于 JSON 序列化
+        """
+        return {
+            'title': self.title,
+            'counter': self.counter,
+            'counter2': self.counter2,
+            'echart1': self.echart1,
+            'echart2': self.echart2,
+            'echarts3_1': self.echarts3_1,
+            'echarts3_2': self.echarts3_2,
+            'echarts3_3': self.echarts3_3,
+            'echart4': self.echart4,
+            'echart5': self.echart5,
+            'echart6': self.echart6,
+            'map_1': self.map_1,
+        }
 
 
 class SourceData(SourceDataDemo):
@@ -210,6 +271,7 @@ class SourceData(SourceDataDemo):
         """
         super().__init__()
         self.title = '大数据可视化展板通用模板'
+
 
 class CorpData(SourceDataDemo):
 

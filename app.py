@@ -5,8 +5,9 @@
 # @Site :
 # @Describe:
 
-from flask import Flask, render_template
-from data import *
+from flask import Flask, render_template, jsonify
+from data import SourceData, CorpData, JobData
+from data_fake import get_accumulated_data
 
 app = Flask(__name__)
 
@@ -27,6 +28,35 @@ def corp():
 def job():
     data = JobData()
     return render_template('index.html', form=data, title=data.title)
+
+
+@app.route('/api/data')
+def api_data():
+    """
+    返回 SourceData 的 JSON 数据
+    """
+    # data = SourceData()
+    data = get_accumulated_data('data', SourceData)  # 模拟实时数据增长
+    return jsonify(data.to_dict())
+
+@app.route('/api/corp')
+def api_corp():
+    """
+    返回 CorpData 的 JSON 数据
+    """
+    # data = CorpData()
+    data = get_accumulated_data('corp', CorpData)  # 模拟实时数据增长
+    return jsonify(data.to_dict())
+
+
+@app.route('/api/job')
+def api_job():
+    """
+    返回 JobData 的 JSON 数据
+    """
+    # data = JobData()
+    data = get_accumulated_data('job', JobData)  # 模拟实时数据增长
+    return jsonify(data.to_dict())
 
 
 if __name__ == "__main__":
