@@ -93,11 +93,10 @@ def _set_data_state(obj, state):
 
 def get_accumulated_data(key, factory, factor=0.1):
     """
-    在上一轮结果上叠加随机并累计，返回 to_dict()。
     :param key: 存储键，'data' / 'corp' / 'job'
     :param factory: 无参可调用对象，返回新的数据实例，如 SourceData、CorpData、JobData
     :param factor: add_random 的随机幅度
-    :return: 数据字典，可直接用于 jsonify
+    :return: 数据实例
     """
     data = factory()
     if _store.get(key) is not None:

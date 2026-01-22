@@ -1295,12 +1295,12 @@ function refreshData() {
     });
 }
 
-// 页面加载完成后，每5秒刷新一次数据
+// 页面加载完成后，每3秒刷新一次数据
 $(document).ready(function() {
-    // 初始加载后等待5秒再开始定时刷新，确保所有图表都已初始化
+    // 初始加载后等待3秒再开始定时刷新，确保所有图表都已初始化
     setTimeout(function() {
-        setInterval(refreshData, 5000); // 每5秒刷新一次
-    }, 5000);
+        setInterval(refreshData, 3000); // 每3秒刷新一次
+    }, 3000);
 });
 
 </script>
